@@ -1,0 +1,45 @@
+########## INSTALLATION MANUAL
+
+## For sinQC (used in script-sc.py):
+
+- Install R, Python, and in R:
+
+install.packages(gplots)
+install.packages(ROCR)
+library(gplots)
+library(ROCR)
+
+- Then in the terminal:
+
+tar -xvf SINQC_v1.5
+
+## For RSEM (used in script-sc.py):
+
+- Install R, Python, C++, Perl (also Bowtie2 if not already installed)
+
+- Then in the terminal:
+
+tar -xvf RSEM-1.3.0.tar
+cd RSEM-1.3.0
+make
+
+## For HTseq:
+
+Go to the corresponding folder
+In terminal:
+python setup.py build
+python setup.py —-user
+
+########## STARTING THE PIPELINE
+
+## script.py:
+Your file is named “file” and “mode” is either PE or SE (modify in Python file)
+
+In BASH shell: python script.py
+
+## script-sc.py:
+Your file is named “file” and “mode” is either PE or SE (modify in Python file)
+
+In BASH shell: python script-sc.py
+
+See script[-sc]_multiple to start a several-file analysis
